@@ -30,7 +30,7 @@ void snowflake(int sl,int level){
 int main(){
     std::fstream file;
     int lev;
-    std::cout << "Enter degree of complexity (between 1-5):" << std::endl;
+    std::cout << "Enter degree of complexity (between 0-5):" << std::endl;
     std::cin >> lev;
     std::string name = "snowflake";
     std::string levv = std::to_string(lev);
