@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 <title> Andrew's Portfolio Website </title>
   <style> body { 
-    background-color: rgb(25,203,235);
+    background-color: rgb(250,203,235);
     }
     p {text-align:center}
   </style>
