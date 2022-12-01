@@ -1,4 +1,4 @@
-# 212project.github.io
+# Recursive Graphics
 
 Welcome to our Repo for our Final Project for CSC 212 at URI!
 
