@@ -1,7 +1,6 @@
 #include <string>
 #include <iostream>
 #include <fstream>
-#include <string>
 
 void snowflake(int sl,int level, std::string &commands); //define function since it will be used in helper function
 
