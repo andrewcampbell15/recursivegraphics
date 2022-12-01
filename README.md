@@ -26,6 +26,6 @@ Instructions for compiling and running code:
 
 9. If you choose to test locally you will need to download 'l-system-plotter.py' from our repo and run this code 'python3 l-system-plotter.py YOUR_SNOWFLAKE/TRIANGLE_TXT_FILE_NAME.txt <output file name> 60'
 
-10. If you test using the website simply paste the txt file documents where it says 'instructions' and then hit the run button
+10. If you test using the website simply paste the txt file documents where it says 'instructions' (line 21) and then hit the run button
   
 11. Enjoy your shape!
