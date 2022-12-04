@@ -8,7 +8,7 @@ Within this repo we have added many files, including our .cpp files .txt files a
 
 Instructions for compiling and running code:
 
-1. Download the source files (SierpinskiTriangle.cpp and VonKoch'sSnowflake.cpp)
+1. Download the source files (SierpinskiTriangle.cpp, VonKoch'sSnowflake.cpp, and hil.cpp)
 
 2. Compile the code, for example for VonKoch'sSnowflake.cpp (in terminal) 'g++ VonKoch'sSnowflake.cpp -o snow'
 
@@ -26,6 +26,6 @@ Instructions for compiling and running code:
 
 9. If you choose to test locally you will need to download 'l-system-plotter.py' from our repo and run this code 'python3 l-system-plotter.py YOUR_SNOWFLAKE/TRIANGLE_TXT_FILE_NAME.txt <output file name> 60'
 
-10. If you test using the website simply paste the txt file documents where it says 'instructions' (line 21) and then hit the run button
+10. If you test using the website simply paste the txt file documents where it says 'instructions' (line 21). In line 23 if you are using either the Sierpinski Triangle or VonKoch's Snowflake set the 3rd argument to 60. For the Hilbert Curve set it to 90. Once that is complete hit the run button.
   
 11. Enjoy your shape!
