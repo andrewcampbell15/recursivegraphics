@@ -37,19 +37,20 @@ void curve (int n, std::string &move, int degree){
     if (n <= 0){
         return;
     }
+        // this check that is called helps to determine if the cursor should be turned 90 degrees or 270
         if (degree == 90){
-            move+= "+";
+            move+= "+";// turn 90 degrees to the right
         }
         else {
-            move += "+++";
+            move += "+++"; // turn 270 degrees to the right
         }
         curve(n-1, move, -degree);
         move += "F"; // forward
         if (degree == 90){
-            move+= "-";
+            move+= "-"; // turn 90 degrees to the left
         }
         else {
-            move += "---";
+            move += "---"; // turn 270 degrees to the left
         }
         curve(n-1, move, degree);
         move+="F"; // forward
