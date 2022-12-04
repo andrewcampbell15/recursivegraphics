@@ -8,7 +8,7 @@ Within this repo we have added many files, including our .cpp files .txt files a
 
 Instructions for compiling and running code:
 
-1. Download the source files (SierpinskiTriangle.cpp, VonKoch'sSnowflake.cpp, and hil.cpp)
+1. Download the source files (SierpinskiTriangle.cpp, VonKoch'sSnowflake.cpp, and hilbertsCurve.cpp)
 
 2. Compile the code, for example for VonKoch'sSnowflake.cpp (in terminal) 'g++ VonKoch'sSnowflake.cpp -o snow'
 
