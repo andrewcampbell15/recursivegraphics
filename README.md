@@ -22,7 +22,7 @@ Instructions for compiling and running code:
 
 7. Copy all the contents from that text file
 
-8. You can either test this code locally or through the use of our website ([https://andrewcampbell15.github.io/212project.github.io/](https://andrewcampbell15.github.io/recursivegraphics/))
+8. You can either test this code locally or through the use of our website (https://andrewcampbell15.github.io/recursivegraphics/)
 
 9. If you choose to test locally you will need to download 'l-system-plotter.py' from our repo and run this code 'python3 l-system-plotter.py YOUR_SNOWFLAKE/TRIANGLE_TXT_FILE_NAME.txt <output file name> 60'
   9a. If you would like to test hilbert's curve, change the last value '60' to '90' since the turns will be 90 degrees.
