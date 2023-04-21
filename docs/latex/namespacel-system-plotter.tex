@@ -1,0 +1,118 @@
+\hypertarget{namespacel-system-plotter}{}\doxysection{l-\/system-\/plotter Namespace Reference}
+\label{namespacel-system-plotter}\index{l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacel-system-plotter_af1d1ba7061ce51fbd85670384a2e80da}{plot\+\_\+coords}} (coords, fname, bare\+\_\+plot=False)
+\item 
+def \mbox{\hyperlink{namespacel-system-plotter_a4a660e02d6fe5bd5414d7d530dc8df76}{print\+\_\+coords}} (coords)
+\item 
+def \mbox{\hyperlink{namespacel-system-plotter_ae1b51781df13db5b2fe2cdeee7688a8a}{turtle\+\_\+to\+\_\+coords}} (turtle\+\_\+program, turn\+\_\+amount=60)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+pi \mbox{\hyperlink{namespacel-system-plotter_a040a23b65bb417aed27b1d5001a24d6a}{DEGREES\+\_\+\+TO\+\_\+\+RADIANS}} = pi / 180
+\item 
+tuple \mbox{\hyperlink{namespacel-system-plotter_a83979a11f668eef01caf9cc4e690e185}{state}} = (x, y, \mbox{\hyperlink{namespacel-system-plotter_ad52de479de75109d6aeb8883990ecc72}{angle}} -\/ turn\+\_\+amount)
+\item 
+sys \mbox{\hyperlink{namespacel-system-plotter_a10b16a60a0d65ee65a87ed74b4717d96}{in\+\_\+fname}} = sys.\+argv\mbox{[}1\mbox{]}
+\item 
+sys \mbox{\hyperlink{namespacel-system-plotter_a03c7d21417a8086a6c1ab393c91c70c1}{out\+\_\+fname}} = sys.\+argv\mbox{[}2\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacel-system-plotter_a0f9869faec640b5a1cfa7224f2cc7da7}{data}} = \mbox{[}$\,$\mbox{]}
+\item 
+int \mbox{\hyperlink{namespacel-system-plotter_ad52de479de75109d6aeb8883990ecc72}{angle}} = int(sys.\+argv\mbox{[}3\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacel-system-plotter_af1d1ba7061ce51fbd85670384a2e80da}\label{namespacel-system-plotter_af1d1ba7061ce51fbd85670384a2e80da}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!plot\_coords@{plot\_coords}}
+\index{plot\_coords@{plot\_coords}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{plot\_coords()}{plot\_coords()}}
+{\footnotesize\ttfamily def l-\/system-\/plotter.\+plot\+\_\+coords (\begin{DoxyParamCaption}\item[{}]{coords,  }\item[{}]{fname,  }\item[{}]{bare\+\_\+plot = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Plots a series of coordinates and saves the resulting figure to a 
+file.
+
+Args:
+    coords: A list of tuples containing the X and Y coordinates to be 
+plotted.
+    fname: The filename for the saved figure.
+    bare_plot: Optional flag that, if True, hides the axis markers. 
+Defaults to False.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacel-system-plotter_a4a660e02d6fe5bd5414d7d530dc8df76}\label{namespacel-system-plotter_a4a660e02d6fe5bd5414d7d530dc8df76}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!print\_coords@{print\_coords}}
+\index{print\_coords@{print\_coords}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{print\_coords()}{print\_coords()}}
+{\footnotesize\ttfamily def l-\/system-\/plotter.\+print\+\_\+coords (\begin{DoxyParamCaption}\item[{}]{coords }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prints a list of coordinates to the console.
+
+Args:
+    coords: A list of tuples containing the X and Y coordinates to be 
+printed.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacel-system-plotter_ae1b51781df13db5b2fe2cdeee7688a8a}\label{namespacel-system-plotter_ae1b51781df13db5b2fe2cdeee7688a8a}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!turtle\_to\_coords@{turtle\_to\_coords}}
+\index{turtle\_to\_coords@{turtle\_to\_coords}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{turtle\_to\_coords()}{turtle\_to\_coords()}}
+{\footnotesize\ttfamily def l-\/system-\/plotter.\+turtle\+\_\+to\+\_\+coords (\begin{DoxyParamCaption}\item[{}]{turtle\+\_\+program,  }\item[{}]{turn\+\_\+amount = {\ttfamily 60} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts a turtle graphics program to a list of X and Y coordinates.
+
+Args:
+    turtle_program: A string representing a turtle graphics program.
+    turn_amount: Optional angle in degrees for turtle turns. Defaults 
+to 60.
+
+Returns:
+    A list of tuples containing the X and Y coordinates of the 
+turtle's path.
+\end{DoxyVerb}
+
+
+\begin{DoxyVerb}The state variable tracks the current location and angle of the 
+turtle.
+The turtle starts at (0, 0) facing right (0 degrees).\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacel-system-plotter_ad52de479de75109d6aeb8883990ecc72}\label{namespacel-system-plotter_ad52de479de75109d6aeb8883990ecc72}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!angle@{angle}}
+\index{angle@{angle}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily int l-\/system-\/plotter.\+angle = int(sys.\+argv\mbox{[}3\mbox{]})}
+
+\mbox{\Hypertarget{namespacel-system-plotter_a0f9869faec640b5a1cfa7224f2cc7da7}\label{namespacel-system-plotter_a0f9869faec640b5a1cfa7224f2cc7da7}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!data@{data}}
+\index{data@{data}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily file l-\/system-\/plotter.\+data = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespacel-system-plotter_a040a23b65bb417aed27b1d5001a24d6a}\label{namespacel-system-plotter_a040a23b65bb417aed27b1d5001a24d6a}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!DEGREES\_TO\_RADIANS@{DEGREES\_TO\_RADIANS}}
+\index{DEGREES\_TO\_RADIANS@{DEGREES\_TO\_RADIANS}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{DEGREES\_TO\_RADIANS}{DEGREES\_TO\_RADIANS}}
+{\footnotesize\ttfamily pi l-\/system-\/plotter.\+DEGREES\+\_\+\+TO\+\_\+\+RADIANS = pi / 180}
+
+\mbox{\Hypertarget{namespacel-system-plotter_a10b16a60a0d65ee65a87ed74b4717d96}\label{namespacel-system-plotter_a10b16a60a0d65ee65a87ed74b4717d96}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!in\_fname@{in\_fname}}
+\index{in\_fname@{in\_fname}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{in\_fname}{in\_fname}}
+{\footnotesize\ttfamily sys l-\/system-\/plotter.\+in\+\_\+fname = sys.\+argv\mbox{[}1\mbox{]}}
+
+\mbox{\Hypertarget{namespacel-system-plotter_a03c7d21417a8086a6c1ab393c91c70c1}\label{namespacel-system-plotter_a03c7d21417a8086a6c1ab393c91c70c1}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!out\_fname@{out\_fname}}
+\index{out\_fname@{out\_fname}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{out\_fname}{out\_fname}}
+{\footnotesize\ttfamily sys l-\/system-\/plotter.\+out\+\_\+fname = sys.\+argv\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{namespacel-system-plotter_a83979a11f668eef01caf9cc4e690e185}\label{namespacel-system-plotter_a83979a11f668eef01caf9cc4e690e185}} 
+\index{l-\/system-\/plotter@{l-\/system-\/plotter}!state@{state}}
+\index{state@{state}!l-\/system-\/plotter@{l-\/system-\/plotter}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily tuple l-\/system-\/plotter.\+state = (x, y, \mbox{\hyperlink{namespacel-system-plotter_ad52de479de75109d6aeb8883990ecc72}{angle}} -\/ turn\+\_\+amount)}
+

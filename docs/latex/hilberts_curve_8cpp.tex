@@ -1,0 +1,73 @@
+\hypertarget{hilberts_curve_8cpp}{}\doxysection{hilberts\+Curve.\+cpp File Reference}
+\label{hilberts_curve_8cpp}\index{hilbertsCurve.cpp@{hilbertsCurve.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{hilberts_curve_8cpp_a7a96670312632ef85ebd887a59cca5bd}{curve}} (int n, std\+::string \&move, int degree)
+\begin{DoxyCompactList}\small\item\em Recursively generates the Hilbert curve of a given degree. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{hilberts_curve_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{hilberts_curve_8cpp_a7a96670312632ef85ebd887a59cca5bd}\label{hilberts_curve_8cpp_a7a96670312632ef85ebd887a59cca5bd}} 
+\index{hilbertsCurve.cpp@{hilbertsCurve.cpp}!curve@{curve}}
+\index{curve@{curve}!hilbertsCurve.cpp@{hilbertsCurve.cpp}}
+\doxysubsubsection{\texorpdfstring{curve()}{curve()}}
+{\footnotesize\ttfamily void curve (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{std\+::string \&}]{move,  }\item[{int}]{degree }\end{DoxyParamCaption})}
+
+
+
+Recursively generates the Hilbert curve of a given degree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Degree of the curve. \\
+\hline
+{\em move} & A string that stores the final commands for the curve. \\
+\hline
+{\em degree} & The current direction of the curve. \\
+\hline
+\end{DoxyParams}
+This check determines if the cursor should be turned 90 degrees or
+
+Turn 90 degrees to the right
+
+Turn 270 degrees to the right
+
+Forward
+
+Turn 90 degrees to the left
+
+Turn 270 degrees to the left
+
+Forward
+
+Forward\mbox{\Hypertarget{hilberts_curve_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{hilberts_curve_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{hilbertsCurve.cpp@{hilbertsCurve.cpp}!main@{main}}
+\index{main@{main}!hilbertsCurve.cpp@{hilbertsCurve.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Going to create an output file
+
+Get complexity from user
+
+Start name of file
+
+Add level of complexity to the txt files name
+
+Add the .txt extension
+
+Create string of commands
+
+Call curve to start the Hilbert curve
+
+Tell user when the process has completed
+
+Write the commands to the file
+
+Close the file and end the program

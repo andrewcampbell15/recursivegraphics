@@ -1,0 +1,92 @@
+\hypertarget{snowflake_8cpp}{}\doxysection{snowflake.\+cpp File Reference}
+\label{snowflake_8cpp}\index{snowflake.cpp@{snowflake.cpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{snowflake_8cpp_ae9710807f3602054b8241fff8eddab81}{snow\+Helper}} (int sl, int lev, std\+::string \&commands)
+\begin{DoxyCompactList}\small\item\em Helper function for generating a snowflake shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{snowflake_8cpp_afe925885141d97204e0c18f0994b13d0}{snowflake}} (int sl, int level, std\+::string \&commands)
+\begin{DoxyCompactList}\small\item\em Recursive function for generating a snowflake shape. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{snowflake_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{snowflake_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{snowflake_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{snowflake.cpp@{snowflake.cpp}!main@{main}}
+\index{main@{main}!snowflake.cpp@{snowflake.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Open an output file.
+
+Get complexity from user.
+
+Start name of file.
+
+Add level of complexity to the txt file\textquotesingle{}s name.
+
+Add the .txt ext.
+
+Create string of commands.
+
+Call snow helper to start the snowflake.
+
+Tell the user when the process has completed.
+
+Write the commands to the file.
+
+Close the file and end the program.\mbox{\Hypertarget{snowflake_8cpp_afe925885141d97204e0c18f0994b13d0}\label{snowflake_8cpp_afe925885141d97204e0c18f0994b13d0}} 
+\index{snowflake.cpp@{snowflake.cpp}!snowflake@{snowflake}}
+\index{snowflake@{snowflake}!snowflake.cpp@{snowflake.cpp}}
+\doxysubsubsection{\texorpdfstring{snowflake()}{snowflake()}}
+{\footnotesize\ttfamily void snowflake (\begin{DoxyParamCaption}\item[{int}]{sl,  }\item[{int}]{level,  }\item[{std\+::string \&}]{commands }\end{DoxyParamCaption})}
+
+
+
+Recursive function for generating a snowflake shape. 
+
+This function generates a snowflake shape using recursion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sl} & The length of each line segment of the snowflake. \\
+\hline
+{\em level} & The current level of recursion. \\
+\hline
+{\em commands} & The current list of commands for generating the snowflake. \\
+\hline
+\end{DoxyParams}
+Base case\+: if we\textquotesingle{}ve reached the maximum recursion level, draw a
+
+Call the function 4 more times within a single call.
+
+Left turns are 60 degrees.
+
+Right turns are 120 degrees.\mbox{\Hypertarget{snowflake_8cpp_ae9710807f3602054b8241fff8eddab81}\label{snowflake_8cpp_ae9710807f3602054b8241fff8eddab81}} 
+\index{snowflake.cpp@{snowflake.cpp}!snowHelper@{snowHelper}}
+\index{snowHelper@{snowHelper}!snowflake.cpp@{snowflake.cpp}}
+\doxysubsubsection{\texorpdfstring{snowHelper()}{snowHelper()}}
+{\footnotesize\ttfamily void snow\+Helper (\begin{DoxyParamCaption}\item[{int}]{sl,  }\item[{int}]{lev,  }\item[{std\+::string \&}]{commands }\end{DoxyParamCaption})}
+
+
+
+Helper function for generating a snowflake shape. 
+
+The snowflake is divided into 3 parts, so this function runs the code 3 times.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sl} & The length of each line segment of the snowflake. \\
+\hline
+{\em lev} & The current level of recursion. \\
+\hline
+{\em commands} & The current list of commands for generating the snowflake. \\
+\hline
+\end{DoxyParams}
+Snowflake is divided into 3 parts, so we run the code 3 times.
+
+At the end of each iteration, turn right.

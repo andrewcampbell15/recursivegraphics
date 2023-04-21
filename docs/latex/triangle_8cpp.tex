@@ -1,0 +1,55 @@
+\hypertarget{triangle_8cpp}{}\doxysection{triangle.\+cpp File Reference}
+\label{triangle_8cpp}\index{triangle.cpp@{triangle.cpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{triangle_8cpp_af240e760d066e33a46faf4921aaccb86}{sierpinski\+\_\+triangle}} (int degree, int len, std\+::string \&final)
+\item 
+int \mbox{\hyperlink{triangle_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{triangle_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{triangle_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{triangle.cpp@{triangle.cpp}!main@{main}}
+\index{main@{main}!triangle.cpp@{triangle.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Creates output file.
+
+Gets level of complexity from user.
+
+Creates file with the output string that can then be inputted into\mbox{\Hypertarget{triangle_8cpp_af240e760d066e33a46faf4921aaccb86}\label{triangle_8cpp_af240e760d066e33a46faf4921aaccb86}} 
+\index{triangle.cpp@{triangle.cpp}!sierpinski\_triangle@{sierpinski\_triangle}}
+\index{sierpinski\_triangle@{sierpinski\_triangle}!triangle.cpp@{triangle.cpp}}
+\doxysubsubsection{\texorpdfstring{sierpinski\_triangle()}{sierpinski\_triangle()}}
+{\footnotesize\ttfamily std\+::string sierpinski\+\_\+triangle (\begin{DoxyParamCaption}\item[{int}]{degree,  }\item[{int}]{len,  }\item[{std\+::string \&}]{final }\end{DoxyParamCaption})}
+
+Generates the Sierpinski triangle L-\/system string recursively. 
+\begin{DoxyParams}{Parameters}
+{\em degree} & The degree of complexity. \\
+\hline
+{\em len} & The length of the side of the largest triangle. \\
+\hline
+{\em final} & A reference to the final output string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The final output string. 
+\end{DoxyReturn}
+Base case is when degree hits 0; return nothing.
+
+String for each function call that is added to final string.
+
+Outer loop loops 3 times for every side of the triangle.
+
+Inner loop adds \char`\"{}\+F\char`\"{} to the output string length number of
+
+Turns the arrow 120 degrees.
+
+Recursion with degree moving towards base case and the length
